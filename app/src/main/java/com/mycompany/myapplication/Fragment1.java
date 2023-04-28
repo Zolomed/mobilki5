@@ -1,9 +1,9 @@
 package com.mycompany.myapplication;
 
+import android.app.Fragment;
 import android.os.Bundle;
 
-import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
+
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +13,6 @@ import android.widget.EditText;
 
 
 public class Fragment1 extends Fragment {
-
 
 
     public Fragment1() {
@@ -54,7 +53,6 @@ public class Fragment1 extends Fragment {
                 Bundle result = new Bundle();
                 result.putString("email",editEmail.getText().toString());
                 result.putString("password",editPassword.getText().toString());
-                Navigation.findNavController(view).navigate(R.id.action_fragment1_to_fragment2);
             }
         });
 
@@ -62,7 +60,6 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Navigation.findNavController(view).navigate(R.id.action_fragment1_to_fragment3);
             }
         });
 
