@@ -1,4 +1,4 @@
-package com.mycompany.myapplication;
+package com.mycompany.myapplication.Data.UI;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.mycompany.myapplication.R;
 
 
 public class Fragment1 extends Fragment {
